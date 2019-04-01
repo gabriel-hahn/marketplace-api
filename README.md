@@ -1,2 +1,3 @@
-# marketplace-rest-api
-A NodeJS Marketplace REST API
+# Marketplace NodeJS
+
+A NodeJS Marketplace project.
