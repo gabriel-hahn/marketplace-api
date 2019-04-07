@@ -18,7 +18,8 @@
     },
     "homepage": "https://github.com/gabriel-hahn/marketplace-api#readme",
     "dependencies": {
-        "express": "ˆ4.16.4"
+        "express": "ˆ4.16.4",
+        "mongoose": "^5.4.22"
     },
     "devDependencies": {
         "eslint": "ˆ5.9.0",
