@@ -2,11 +2,11 @@
 
 A NodeJS Marketplace API project :pencil:
 
-This project simulate an API from a marketplace which a user can publish his product to sell and another person can send a e-mail, showing interest on that product.
+This project simulate an API from a marketplace which a user can publish his product to sell and another person can send a e-mail to him, showing interest on that product.
 
 ## Dependencies
 
-You must need to use [Redis](https://redis.io) and [MongoDB](https://www.mongodb.com) to run this project. You can choose between download them or using [Docker](https://www.docker.com). To run them using Docker, execute the follow commands:
+You must need to use [Redis](https://redis.io) and [MongoDB](https://www.mongodb.com) to run this project. You can choose between download them or using [Docker](https://www.docker.com). To run them using Docker, execute the following example commands:
 
 #### Redis
 
