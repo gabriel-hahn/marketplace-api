@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/gabriel-hahn/marketplace-api#readme",
     "dependencies": {
+        "@sentry/node": "^5.4.3",
         "bcryptjs": "^2.4.3",
         "express": "ˆ4.16.4",
         "express-async-handler": "^1.1.4",
