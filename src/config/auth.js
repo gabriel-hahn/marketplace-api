@@ -1,4 +1,4 @@
 module.exports = {
-  secret: 'marketplaceNode',
+  secret: process.env.APP_SECRET,
   ttl: 86400
 }
