@@ -2,7 +2,7 @@
 
 A NodeJS Marketplace API project :pencil:
 
-This project simulate an API from a marketplace which a user can publish his product to sell and another person can send a e-mail to him, showing interest on that product.
+This project simulates an API from a marketplace which a user can publish his product to sell and another person can send a e-mail to him, showing interest on that product.
 
 ## Dependencies
 
@@ -19,6 +19,68 @@ $ docker run --name noderedis -p 6379:6379 -d -t redis:alpine
 ```sh
 $ docker run --name nodemongo -p 8081:8081 -d -t mongo:latest
 ```
+
+## Resources
+
+#### User
+
+``POST - /users ``  Create a new user
+
+**Arguments**
+
+| Argument | Type    | Required |
+|----------|---------|----------|
+|`name`    |*string* | x        |
+|`email`   |*string* | x        |
+|`password`|*string* | x        |
+
+#### Sessions
+
+``POST - /sessions ``  Create a new session to the user
+
+**Arguments**
+
+| Argument | Type    | Required |
+|----------|---------|----------|
+|`email`   |*string* | x        |
+|`password`|*string* | x        |
+
+#### Ads
+
+``GET - /ads ``  Get all ads <br>
+``GET - /ads/:id ``  Get a ad by ID <br>
+``DELETE - /ads/:id ``  Delete a ad by ID <br>
+
+``POST - /ads ``  Create a new ad
+
+**Arguments**
+
+| Argument    | Type    | Required |
+|-------------|---------|----------|
+|`title`      |*string* | x        |
+|`description`|*string* | x        |
+|`price`      |*numeric*| x        |
+
+``PUT - /ads ``  Update a exists ad
+
+**Arguments**
+
+| Argument    | Type    | Required |
+|-------------|---------|----------|
+|`title`      |*string* | x        |
+|`description`|*string* | x        |
+|`price`      |*numeric*| x        |
+
+#### Purchases
+
+``POST - /purchases ``  Create a new purchase request
+
+**Arguments**
+
+| Argument    | Type    | Required | Options                      |
+|-------------|---------|----------|------------------------------|
+|`ad`         |*numeric*| x        | Ad ID                        |
+|`content`    |*string* | x        | Message to send to Ad author |
 
 ## Contributing
 
