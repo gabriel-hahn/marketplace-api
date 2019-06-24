@@ -1,5 +1,6 @@
 const Ad = require('../models/Ad')
 const User = require('../models/User')
+const Purchase = require('../models/Purchase')
 const PurchaseEmail = require('../jobs/PurchaseMail')
 const Queue = require('../services/Queue')
 
@@ -15,6 +16,8 @@ class PurchaseController {
       user,
       content
     }).save()
+
+    Purchase.create(req.body)
 
     return res.send()
   }
