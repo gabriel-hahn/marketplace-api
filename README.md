@@ -20,6 +20,25 @@ $ docker run --name noderedis -p 6379:6379 -d -t redis:alpine
 $ docker run --name nodemongo -p 8081:8081 -d -t mongo:latest
 ```
 
+## Getting Started
+
+To run this Marketplace API locally, create a .env file in the project folder, following the file structure example below and overriding the values with your configuration:
+
+```
+APP_SECRET:Secret key of API
+
+MAIL_HOST:Mail host config
+MAIL_PORT:Mail port config
+MAIL_USER:Mail user config
+MAIL_PASS:Mail pass config
+
+DB_URL:URL of MongoDB
+REDIS_HOST:Host of Redis
+REDIS_PORT:Port using by Redis
+
+SENTRY_DSN:Sentry DNS
+```
+
 ## Resources
 
 #### User
