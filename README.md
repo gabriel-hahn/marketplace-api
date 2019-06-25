@@ -92,7 +92,8 @@ SENTRY_DSN:Sentry DNS
 
 #### Purchases
 
-``POST - /purchases ``  Create a new purchase request
+``PUT - /purchases/:id`` Close a purchase and the ad <br>
+``POST - /purchases ``   Create a new purchase request
 
 **Arguments**
 
