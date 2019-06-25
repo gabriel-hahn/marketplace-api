@@ -6,9 +6,19 @@ const PurchaseSchema = new mongoose.Schema({
     ref: 'Ad',
     required: true
   },
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
   content: {
     type: String,
     required: true
+  },
+  closed: {
+    type: Boolean,
+    required: true,
+    default: false
   }
 })
 

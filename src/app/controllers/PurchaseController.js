@@ -17,7 +17,29 @@ class PurchaseController {
       content
     }).save()
 
-    Purchase.create(req.body)
+    const purchase = { ...req.body, userId: req.userId }
+
+    Purchase.create(purchase)
+
+    return res.send()
+  }
+
+  async purchased (req, res) {
+    const { id } = req.params
+
+    const purchase = await Purchase.findById(id)
+
+    if (!purchase) {
+      return res.status(400).json({ error: 'Purchase not found' })
+    }
+
+    const ad = await Ad.findById(purchase.ad)
+
+    ad.purchasedBy = req.userId
+    ad.save()
+
+    purchase.closed = true
+    purchase.save()
 
     return res.send()
   }
