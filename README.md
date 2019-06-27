@@ -2,7 +2,7 @@
 
 A NodeJS Marketplace API project :pencil:
 
-This project simulates an API from a marketplace which a user can publish his product to sell and another person can send a e-mail to him, showing interest on that product.
+This project simulates an API from a marketplace which an user can publish his product to sell and another person can send an e-mail to him, showing interest on that product.
 
 ## Dependencies
 
